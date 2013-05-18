@@ -6,6 +6,7 @@
 
 Version 0.0.1 - Currently in development. No way ready to production
 
+
 ## Dependencies
 
  - [nodejs](https://github.com/joyent/node)
@@ -13,7 +14,7 @@ Version 0.0.1 - Currently in development. No way ready to production
  - [phantomjs](https://github.com/ariya/phantomjs)
 
 ## Vagrant
-If you don't want to install all dependencies (node.js, couchdb…), you can use Vagrant to get the same setup.
+If you don't want to install all dependencies (node.js, couchdb…), you can use [Vagrant](https://github.com/mitchellh/vagrant) to get the same setup.
 Just issue `vagrant up` to set up the vagrant machine will all dependencies ready.
 
 ## License
