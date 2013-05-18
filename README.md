@@ -1,11 +1,14 @@
 <img src="http://cl.ly/image/250G0o0L2l1o/voyeur@2x.png" width="437" height="52">
 ---
 
-[![Build Status](https://secure.travis-ci.org/15minuteslate/voyeur.server.png)](http://travis-ci.org/15minuteslate/voyeur.server)
+[![Build Status](https://travis-ci.org/15minuteslate/voyeur.server.png?branch=dev)](https://travis-ci.org/15minuteslate/voyeur.server)
 [![Dependencies Status](https://david-dm.org/15minuteslate/voyeur.server.png)](https://david-dm.org/15minuteslate/voyeur.server)
 
 Version 0.0.1 - Currently in development. No way ready to production
+---
 
+## Introduction
+voyer.server is the backend for the voyer service. Voyeur is an analytics service.
 
 ## Dependencies
 
