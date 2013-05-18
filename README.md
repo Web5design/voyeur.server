@@ -4,8 +4,6 @@
 [![Build Status](https://travis-ci.org/15minuteslate/voyeur.server.png?branch=dev)](https://travis-ci.org/15minuteslate/voyeur.server)
 [![Dependencies Status](https://david-dm.org/15minuteslate/voyeur.server.png)](https://david-dm.org/15minuteslate/voyeur.server)
 
----
-
 _Version 0.0.1_ - Currently in development. No way ready to production
 
 ## Introduction
