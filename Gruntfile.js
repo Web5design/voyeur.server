@@ -11,7 +11,8 @@ module.exports = function (grunt) {
         files: {
             src: ['index.js', 'lib/**/*.js'],
             test: ['test/**/*.js'],
-            all: ['README.md', 'index.js', 'lib/**/*.js', 'test/**/*.js']
+            all: ['README.md', 'index.js', 'lib/**/*.js', 'test/**/*.js'],
+            ignored: ['README.md', 'node_modules/**', 'test/**', 'docs/**', '.vagrant/**']
         },
 
         jshint: {
@@ -24,6 +25,16 @@ module.exports = function (grunt) {
         clean: {
             docs: ['docs'],
             coverage: ['coverage']
+        },
+
+        nodemon: {
+            dev: {
+                options: {
+                    file: 'index.js',
+                    ignoredFiles: '<%= files.ignored %>',
+                    debug: true
+                }
+            }
         },
 
         plato: {
@@ -143,7 +154,10 @@ module.exports = function (grunt) {
         return (/^grunt-/).test(key) && grunt.loadNpmTasks(key);
     });
 
-    grunt.registerTask('default', ['jshint', 'cafemocha:unit']);
+    grunt.loadNpmTasks('grunt-nodemon');
+
+    grunt.registerTask('default', ['nodemon']);
+    grunt.registerTask('test', ['jshint', 'cafemocha:unit', 'cov']);
     grunt.registerTask('cov', ['clean:coverage', 'coverage:test', 'cafemocha:coverage']);
     grunt.registerTask('docs', ['clean:docs', 'plato:docs', 'dox:voyeur']);
 };

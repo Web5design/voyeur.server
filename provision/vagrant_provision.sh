@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # update apt and install basic packages
-apt-get update
-apt-get install -y curl python-software-properties python g++ make
+apt-get update --fix-missing
+apt-get install -y curl python-software-properties python g++ make htop
 
 # adding nodejs ppa
 if [ ! -e "/etc/apt/sources.list.d/chris-lea-node_js-precise.list" ]
@@ -25,8 +25,3 @@ cd /tmp && curl -SO https://phantomjs.googlecode.com/files/phantomjs-1.9.0-linux
 tar -jxvf phantomjs-1.9.0-linux-x86_64.tar.bz2
 cp phantomjs-1.9.0-linux-x86_64/bin/phantomjs /usr/local/bin/
 apt-get install -y libfontconfig1-dev
-
-# install nodejs modules
-npm install -g forever yo grunt-cli bower
-
-cd /vagrant

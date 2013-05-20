@@ -1,3 +1,5 @@
 node_modules
 .vagrant
 docs
+.DS_Store
+.nodemonignore

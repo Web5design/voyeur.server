@@ -1,0 +1,6 @@
+[submodule "provision/modules/nodejs"]
+	path = provision/modules/nodejs
+	url = https://github.com/puppetlabs/puppetlabs-nodejs.git
+[submodule "provision/modules/apt"]
+	path = provision/modules/apt
+	url = https://github.com/puppetlabs/puppetlabs-apt.git
